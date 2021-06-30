@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand navigation_primary" href="/">Prezenta</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link navigation_font" href="/">Acasa</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link navigation_font" href="/absence">Invoire</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navigation_font" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Concediu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item navigation_dropdown" href="/rest_get_paid">Cu plata</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item navigation_dropdown" href="/rest_not_paid">Fara plata</a>
+                </div>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link navigation_font" href="/account">Contul meu</a>
+            </li>
+            <c:if test = "${isman == 'TRUE'}">
+                &nbsp; &nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link navigation_font" href="/admin_user">Info Angajat</a>
+                </li>
+                &nbsp; &nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link navigation_font" href="/companies">Firme</a>
+                </li>
+                &nbsp; &nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link navigation_font" href="/teams">Echipe</a>
+                </li>
+            </c:if>
+        </ul>
+        <ul class="navbar-nav nav-right">
+            <li><a class="nav-link navigation_font" href="/logout">Logout</a></li>
+        </ul>
+    </div>
+</nav>
